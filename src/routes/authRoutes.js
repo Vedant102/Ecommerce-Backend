@@ -1,5 +1,5 @@
 import express from 'express'
-import User from '../services/mongodb/models/User'
+import User from '../services/mongoDB/models/User'
 const router = express.Router()
 import bcrypt from 'bcryptjs'
 import jwt from 'jsonwebtoken'

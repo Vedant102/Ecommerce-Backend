@@ -1,5 +1,5 @@
 import express from 'express'
-import Category from '../services/mongodb/models/Category'
+import Category from '../services/mongoDB/models/Category'
 import { body, validationResult } from 'express-validator'
 
 

@@ -1,7 +1,7 @@
 import express from 'express'
-import Product from '../services/mongodb/models/Product'
+import Product from '../services/mongoDB/models/Product'
 import { body, validationResult } from 'express-validator'
-import Category from '../services/mongodb/models/Category'
+import Category from '../services/mongoDB/models/Category'
 
 const router = express.Router()
 
