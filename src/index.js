@@ -21,6 +21,10 @@ app.use("/api/v1/auth", authRoutes)
 app.use("/api/v1/category", categoryRoutes)
 app.use("/api/v1/product", productRoutes)
 
+app.get('/', (req,res) => {
+    res.send('server running at ${port}')
+})
+
 
 app.listen(port, (req, res) => {
     console.log(`Server listening at PORT ${port}`)
