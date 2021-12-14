@@ -24,6 +24,5 @@ app.use("/api/v1/product", productRoutes)
 
 app.listen(port, (req, res) => {
     console.log(`Server listening at PORT ${port}`)
-    console.log("hi")
     
 })
