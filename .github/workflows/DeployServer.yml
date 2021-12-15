@@ -3,7 +3,7 @@ name: Deploy Server
 on: 
   push
     branches: 
-      - master
+      - main
     paths:
       - 'src/*'
       - 'github/workflows/DeployServer.yml'
