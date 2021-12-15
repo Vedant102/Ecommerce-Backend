@@ -15,3 +15,13 @@ jobs:
       - uses: actions/checkout@v2
       - name: test workflow
         run: echo "YAY this workflow is running"
+      - name: Add github username
+        run: git config --global user.name 'Vedant102'
+      - name: Add github email
+        run: git config --global user.email 'jadhavvedant102@gmail.com'
+      - name: add heroku remote
+        run: git remote add heroku https://heroku:ecc82863-4ed3-480a-a7d0-189f5e250e3f@git.heroku.com/vedant-api.git
+      - name: Fetch repo
+        run: git fetch --unshallow
+      - name: push to heroku remote
+        run: git push heroku master --force        
