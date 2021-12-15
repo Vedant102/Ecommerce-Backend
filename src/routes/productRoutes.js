@@ -23,47 +23,6 @@ router.get('/all', async (req, res) => {
 })
 
 /*
-type : GET
-path : /api/v1/product/all
-params : none
-query: categoryId
-isProtected: false (public)
-*/
-
-router.get('/all', async (req, res) => {
-    try {
-        const { categoryId } = req.query
-        const products = await Product.find({ category: categoryId })
-        return res.status(200).json({ products, message: "Successfully fetched products" })
-    } catch (error) {
-        console.log(error.message)
-        return res.status(500).json({ products: [], message: "error fetching products" })
-    }
-})
-
-
-/*
-type : GET
-path : /api/v1/product/all
-params : none
-query: categoryId
-isProtected: false (public)
-*/
-
-router.get('/all', async (req, res) => {
-    try {
-        const { categoryId } = req.query
-        const products = await Product.find({ category: categoryId })
-        return res.status(200).json({ products, message: "Successfully fetched products" })
-    } catch (error) {
-        console.log(error.message)
-        return res.status(500).json({ products: [], message: "error fetching products" })
-    }
-})
-
-
-
-/*
 type : POST
 path : /api/v1/product/add
 params : none
